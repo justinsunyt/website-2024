@@ -1,0 +1,80 @@
+---
+import { Image } from "astro:assets";
+import "@/styles/globals.css";
+import Layout from "@/layouts/Layout.astro";
+import akane from "@/assets/images/akane.jpg";
+import fuji from "@/assets/images/fuji.jpg";
+---
+
+<Layout title="justin">
+  <main class="container max-w-3xl px-4 py-16 flex flex-col">
+    <div class="flex flex-col gap-8">
+      <div class="flex flex-col">
+        <p class="text-sm text-primary">shanghai • la • philly • bay</p>
+        <div class="flex justify-between items-center gap-4">
+          <h1 class="text-4xl font-bold">yo, i'm justin.</h1>
+          <div class="relative group">
+            <div
+              class="relative inline-block overflow-hidden rounded-full p-[1px]"
+            >
+              <span
+                class="absolute inset-[-100%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg,hsl(var(--primary))_0%,hsl(var(--background))_50%,hsl(var(--primary))_100%)] blur-[48px]"
+              ></span>
+              <div class="relative">
+                <Image src={akane} alt="Akane" class="rounded-full h-16 w-16" />
+              </div>
+            </div>
+            <span
+              class="absolute top-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-foreground text-background text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+            >
+              akane &lt;3
+            </span>
+          </div>
+        </div>
+      </div>
+      <p class="text-xl">
+        i'm an undergrad at upenn m&t studying cs and entrepreneurship. since
+        may, i've been leading product engineering and building web ai agents at <a
+          class="underline decoration-dashed underline-offset-4 hover:text-primary"
+          href="https://multion.ai">multion</a
+        >.
+      </p>
+      <p class="text-xl">
+        outside of tech, i'm playing valorant at <a
+          class="underline decoration-dashed underline-offset-4 hover:text-primary"
+          href="https://upennesports.org">penn esports</a
+        >, binging <a
+          class="underline decoration-dashed underline-offset-4 hover:text-primary"
+          href="https://myanimelist.net/animelist/justinsunyt">anime</a
+        >, listening to <a
+          class="underline decoration-dashed underline-offset-4 hover:text-primary"
+          href="https://open.spotify.com/user/21ot4oj3gvnedtvlhzlfetgoq?si=ea4fcdeefda14194"
+          >bangers</a
+        >, learning clarinet, getting buff at the jim, and taking <a
+          class="underline decoration-dashed underline-offset-4 hover:text-primary"
+          href="/photos">photos</a
+        >!
+      </p>
+      <p class="text-xl">
+        you can find me shitposting on <a
+          class="underline decoration-dashed underline-offset-4 hover:text-primary"
+          href="https://twitter.com/justinsunyt">twitter</a
+        > and building side projects on <a
+          class="underline decoration-dashed underline-offset-4 hover:text-primary"
+          href="https://github.com/justinsunyt">github</a
+        >.
+      </p>
+      <div class="flex flex-col items-center gap-2 mt-4">
+        <div class="relative inline-block overflow-hidden rounded-lg p-[1px]">
+          <span
+            class="absolute inset-[-100%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg,hsl(var(--primary))_0%,hsl(var(--background))_50%,hsl(var(--primary))_100%)] blur-[48px]"
+          ></span>
+          <div class="relative">
+            <Image src={fuji} alt="Fuji" class="rounded-lg" />
+          </div>
+        </div>
+        <i class="text-primary">mount fuji, jan 2024 - my favorite photo :3</i>
+      </div>
+    </div>
+  </main>
+</Layout>

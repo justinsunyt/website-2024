@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import "@/styles/globals.css";
+import Layout from "@/layouts/Layout.astro";
+
+import akihabara from "@/assets/images/akihabara.jpg";
+import arashiyama from "@/assets/images/arashiyama.jpg";
+import citywalk1 from "@/assets/images/citywalk1.jpg";
+import citywalk2 from "@/assets/images/citywalk2.jpg";
+import citywalk3 from "@/assets/images/citywalk3.jpg";
+import fujiyoshida from "@/assets/images/fujiyoshida.jpg";
+import izu1 from "@/assets/images/izu1.jpg";
+import izu2 from "@/assets/images/izu2.jpg";
+import kyoto from "@/assets/images/kyoto.jpg";
+import shimokitazawa from "@/assets/images/shimokitazawa.jpg";
+import tokyo1 from "@/assets/images/tokyo1.jpg";
+import tokyo2 from "@/assets/images/tokyo2.jpg";
+---
+
+<Layout title="photos">
+  <main class="container max-w-3xl px-4 py-16 flex flex-col">
+    <a class="mb-4 hover:text-primary" href="/">&lt; home</a>
+    <div class="grid grid-cols-2 gap-4">
+      <Image src={arashiyama} alt="Arashiyama" class="rounded-lg" />
+      <Image src={fujiyoshida} alt="Fujiyoshida" class="rounded-lg" />
+      <Image src={izu1} alt="Izu" class="rounded-lg" />
+      <div class="h-full relative">
+        <Image
+          src={shimokitazawa}
+          alt="Shimokitazawa"
+          class="object-cover h-full w-full rounded-lg"
+        />
+      </div>
+      <Image src={kyoto} alt="Kyoto" class="col-span-2 rounded-lg" />
+      <Image src={tokyo1} alt="Tokyo" class="col-span-2 rounded-lg" />
+      <Image src={tokyo2} alt="Tokyo" class="rounded-lg" />
+      <Image src={izu2} alt="Izu" class="rounded-lg" />
+      <Image src={akihabara} alt="Akihabara" class="col-span-2 rounded-lg" />
+      <Image src={citywalk2} alt="Shanghai" class="rounded-lg" />
+      <Image src={citywalk3} alt="Shanghai" class="rounded-lg" />
+      <Image src={citywalk1} alt="Shanghai" class="col-span-full rounded-lg" />
+    </div>
+  </main>
+</Layout>
