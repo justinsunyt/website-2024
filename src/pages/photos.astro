@@ -21,24 +21,55 @@ import tokyo2 from "@/assets/images/tokyo2.avif";
   <main class="container max-w-3xl px-4 py-8 md:py-16 flex flex-col">
     <a class="mb-4 hover:text-primary" href="/">&lt; home</a>
     <div class="grid grid-cols-2 gap-4">
-      <Image src={arashiyama} alt="Arashiyama" class="rounded-lg" />
-      <Image src={fujiyoshida} alt="Fujiyoshida" class="rounded-lg" />
-      <Image src={izu1} alt="Izu" class="rounded-lg" />
+      <Image
+        src={arashiyama}
+        alt="Arashiyama"
+        class="rounded-lg"
+        loading="lazy"
+      />
+      <Image
+        src={fujiyoshida}
+        alt="Fujiyoshida"
+        class="rounded-lg"
+        loading="lazy"
+      />
+      <Image src={izu1} alt="Izu" class="rounded-lg" loading="lazy" />
       <div class="h-full relative">
         <Image
           src={shimokitazawa}
           alt="Shimokitazawa"
           class="object-cover h-full w-full rounded-lg"
+          loading="lazy"
         />
       </div>
-      <Image src={kyoto} alt="Kyoto" class="col-span-2 rounded-lg" />
-      <Image src={tokyo1} alt="Tokyo" class="col-span-2 rounded-lg" />
-      <Image src={tokyo2} alt="Tokyo" class="rounded-lg" />
-      <Image src={izu2} alt="Izu" class="rounded-lg" />
-      <Image src={akihabara} alt="Akihabara" class="col-span-2 rounded-lg" />
-      <Image src={citywalk2} alt="Shanghai" class="rounded-lg" />
-      <Image src={citywalk3} alt="Shanghai" class="rounded-lg" />
-      <Image src={citywalk1} alt="Shanghai" class="col-span-full rounded-lg" />
+      <Image
+        src={kyoto}
+        alt="Kyoto"
+        class="col-span-2 rounded-lg"
+        loading="lazy"
+      />
+      <Image
+        src={tokyo1}
+        alt="Tokyo"
+        class="col-span-2 rounded-lg"
+        loading="lazy"
+      />
+      <Image src={tokyo2} alt="Tokyo" class="rounded-lg" loading="lazy" />
+      <Image src={izu2} alt="Izu" class="rounded-lg" loading="lazy" />
+      <Image
+        src={akihabara}
+        alt="Akihabara"
+        class="col-span-2 rounded-lg"
+        loading="lazy"
+      />
+      <Image src={citywalk2} alt="Shanghai" class="rounded-lg" loading="lazy" />
+      <Image src={citywalk3} alt="Shanghai" class="rounded-lg" loading="lazy" />
+      <Image
+        src={citywalk1}
+        alt="Shanghai"
+        class="col-span-full rounded-lg"
+        loading="lazy"
+      />
     </div>
   </main>
 </Layout>
