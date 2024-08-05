@@ -70,7 +70,14 @@ import fuji from "@/assets/images/fuji.avif";
             class="absolute inset-[-100%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg,hsl(var(--primary))_0%,hsl(var(--background))_50%,hsl(var(--primary))_100%)] blur-[48px]"
           ></span>
           <div class="relative">
-            <Image src={fuji} alt="Fuji" class="rounded-lg" />
+            <Image
+              src={fuji}
+              alt="Fuji"
+              class="rounded-lg"
+              loading="eager"
+              widths={[960, 2160, 2880]}
+              sizes="(max-width: 360px) 960px, (max-width: 720px) 2160px, 2880px"
+            />
           </div>
         </div>
         <i class="text-primary">mount fuji, jan 2024 - my favorite photo :3</i>
